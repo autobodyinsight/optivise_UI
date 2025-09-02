@@ -13,11 +13,13 @@
       <path d="M32 12a12 12 0 0 1 12 12c0 .8-.1 1.6-.2 2.4A10 10 0 1 1 50 36H14a10 10 0 0 1 0-20c.8 0 1.6.1 2.4.2A12 12 0 0 1 32 12zm0 16v12h8l-12 12-12-12h8V28h8z"/>
     </svg>
 
-    <form method="POST" enctype="multipart/form-data">
+    <form id="uploadForm" enctype="multipart/form-data">
       <label for="pdf-upload" class="upload-btn">Upload PDF</label>
-      <input type="file" id="pdf-upload" name="pdf">
+      <input type="file" id="pdf-upload" name="file" accept=".pdf" style="display:none">
     </form>
   </div>
+
+  <pre id="result" class="result-box"></pre>
 
   <script src="/static/js/upload.js"></script>
 </body>
